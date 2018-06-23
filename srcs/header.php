@@ -1,3 +1,19 @@
+<?php
+
+/* ************************************************************************** */
+/*                                                                            */
+/*  header.php                                                                */
+/*                                                                            */
+/*   By: elhmn <www.elhmn.com>                                                */
+/*             <nleme@live.fr>                                                */
+/*                                                                            */
+/*   Created: Sat Jun 23 11:29:34 2018                        by elhmn        */
+/*   Updated: Sat Jun 23 11:56:30 2018                        by elhmn        */
+/*                                                                            */
+/* ************************************************************************** */
+
+?>
+
 <header>
 	<div id="top-bar">
 		<h2 class="title-logo"><a href="/index.php">Actions Citoyennes</a></h2>
