@@ -1,0 +1,49 @@
+#authentification
+{
+/*	background-color:blue;*/
+	min-height: 500px;
+	padding:5px 40px 5px 40px;
+	display:flex;
+	flex-direction:column;
+	align-item:center;
+	justify-content:center;
+}
+
+form div
+{
+	display:flex;
+	align-item:center;
+	justify-content:center;
+	margin-top:20px;
+}
+
+#inscription-link
+{
+	margin:50px 0 0 0;
+	text-align:center;
+	font-size:0.95em;
+	color:#fb6a35;
+}
+
+#login-title
+{
+	text-align:center;
+	margin:20px 0 20px 0;
+}
+
+#signin-box
+{
+	border:solid 1px black;
+	border-radius:3px;
+	font-size:0.9em;
+	padding: 5px 0 5px 0;
+	margin:0;
+}
+
+#flex-signin-box
+{
+	display:flex;
+	align-item:center;
+	justify-content:center;
+	margin:0 0 20px 0;
+}

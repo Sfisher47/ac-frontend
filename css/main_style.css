@@ -1,0 +1,284 @@
+/*
+** General style
+*/
+
+*
+{
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+/*	border:solid 1px black;*/
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+body
+{
+/*	text-align:center;*/
+}
+
+#main
+{
+
+}
+
+/*
+** Specialized style
+*/
+
+header
+{
+/*	background-color: yellow;*/
+	text-align:center;
+}
+
+#top-bar
+{
+	margin:auto;
+}
+
+header nav
+{
+/*	background-color:orange;*/
+}
+
+header h2
+{
+	width:40%;
+	margin:auto;
+}
+
+@media only screen and (min-width:1024px)
+{
+	header h2, header nav,
+	header form, header li, header #user-data
+	{
+		display:inline-block;
+	}
+
+	#main
+	{
+		width:90%;
+	}
+
+	#header, #top-bar
+	{
+		width:90%;
+		height:auto;
+	}
+
+	#user-data
+	{
+		position:absolute;
+		right:20px;
+	}
+
+	#menu-site
+	{
+		position:absolute;
+		left:100px;
+	}
+}
+
+img
+{
+
+}
+
+#search
+{
+/*
+** height attribute must be deleted
+*/
+/*	background-color:grey; /* Temp */
+	background-image: url('../imgs/search_bg_3.jpg');
+    background-repeat: no-repeat;
+	background-size:cover;
+    background-position: 35% 0%;
+	min-height:500px;
+	display:flex;
+	flex-direction:column;
+	align-item:center;
+	justify-content:center;
+/*	padding-top:10px;*/
+}
+
+#search form
+{
+/*	background-color:orange;*/
+/*	text-align:center;*/
+}
+
+.description-text
+{
+	/* Nécessaires pour text-overflow */
+	/*white-space:nowrap;*/
+	text-align:center;
+	overflow: hidden;
+	text-overflow:clip;
+	padding:10px 20px 10px 20px;
+	font-family: 'Lato', sans-serif;
+	font-size:12pt;
+}
+
+#search .description-text
+{
+	color:white;
+}
+
+#site-description
+{
+	min-height:500px;
+	display:flex;
+	flex-direction:column;
+	align-item:center;
+	justify-content:center;
+/*	height:2em;*/
+	background-color:#002222;
+	color:white; /*Temp*/
+}
+
+#contact-us
+{
+	min-height:500px;
+	display:flex;
+	flex-direction:column;
+	align-item:center;
+	justify-content:center;
+	background-color:#002222;
+	color:white; /*Temp*/
+	background-color:#005555;
+}
+
+footer
+{
+/*	background-color:red;*/
+	font-family: 'Lato', sans-serif;
+	font-size:12pt;
+	padding:5px;
+	color:#929292;
+}
+
+hr
+{
+	border:none;
+	height:5px;
+	background-color:#d8dbdb;
+}
+
+footer h4
+{
+	padding:4px 0 4px 0;
+	color:#23610e; /*elle citoyenne*/
+}
+
+#menu-footer
+{
+	padding:4px 0 4px 0;
+}
+
+
+#search-field
+{
+	padding:5px;
+}
+
+
+.button-m1
+{
+	font-family: 'Lato', sans-serif;
+	font-size:12pt;
+/*	background-color:#1EA0E2;*/
+	background-color:#88aa44; /*elle citoyenne*/
+	color:white;
+	height:50px;
+	border-radius:3px;
+	margin:5px 0 5px 0;
+	border:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.text-field-m1
+{
+	height:50px;
+	border-radius:3px;
+	border:none;
+	font-family:'Lato', sans-serif;
+	font-size:0.95em;
+	padding: 0 5px 0 5px;
+}
+
+.text-field-m2
+{
+	height:50px;
+	border:solid #DDDDDD 1px;
+	border-radius:3px;
+	font-family:'Lato', sans-serif;
+	box-shadow: inset 0 0 5px #DDDDDD;
+	padding: 0 5px 0 5px;
+	margin:10px 0 10px 0;
+	font-size:0.95em;
+}
+
+.selection
+{
+	background-color:#e6eaed;
+	padding:2px 3px 2px 3px;
+}
+
+.col-40
+{
+	width:40%;
+}
+
+.col-50
+{
+	width:50%;
+}
+
+.col-80
+{
+	width:80%;
+}
+
+.col-100
+{
+	width:100%;
+}
+
+.title-logo
+{
+	font-family: 'Italianno', cursive;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:30pt;
+	padding:40px 0 40px 0;
+	color:#88aa44; /*elle citoyenne*/
+/*	color:#1EA0E2;*/
+}
+
+.subtitle
+{
+	font-size:2.5em;
+}
+
+.subtitle-2
+{
+	font-size:1.5em;
+}
+
+a
+{
+	text-decoration:none;
+	text-align:center;
+	color:inherit;
+}
+
+.col-red
+{
+	background-color:#fb6a35;
+}
