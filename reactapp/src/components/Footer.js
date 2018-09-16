@@ -1,18 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*  index.js                                                                  */
+/*  Footer.js                                                                 */
 /*                                                                            */
 /*   By: elhmn <www.elhmn.com>                                                */
 /*             <nleme@live.fr>                                                */
 /*                                                                            */
-/*   Created: Sun Sep 16 17:18:36 2018                        by elhmn        */
-/*   Updated: Sun Sep 16 21:52:26 2018                        by elhmn        */
+/*   Created: Thu Jan 01 01:00:00 1970                        by elhmn        */
+/*   Updated: Mon Sep 17 23:06:55 2018                        by elhmn        */
 /*                                                                            */
 /* ************************************************************************** */
 
+import 'antd/dist/antd.css';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './css/index.css';
-import App from './components/App.js';
+import	{ Row, Col } from 'antd';
+import '../css/Footer.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class	Footer extends React.Component
+{
+	render ()
+	{
+		return (
+			<div id="footer">
+				Footer
+			</div>
+		);
+	}
+};
+
+export default Footer;

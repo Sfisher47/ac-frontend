@@ -1,18 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*  index.js                                                                  */
+/*  App.js                                                                    */
 /*                                                                            */
 /*   By: elhmn <www.elhmn.com>                                                */
 /*             <nleme@live.fr>                                                */
 /*                                                                            */
-/*   Created: Sun Sep 16 17:18:36 2018                        by elhmn        */
-/*   Updated: Sun Sep 16 21:52:26 2018                        by elhmn        */
+/*   Created: Sun Sep 16 20:04:48 2018                        by elhmn        */
+/*   Updated: Mon Sep 17 21:01:51 2018                        by elhmn        */
 /*                                                                            */
 /* ************************************************************************** */
 
+import 'antd/dist/antd.css';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './css/index.css';
-import App from './components/App.js';
+import	Header from './Header';
+import	Content from './Content';
+import	Footer from './Footer';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class	App	extends React.Component
+{
+	render ()
+	{
+		return (
+			<div>
+				<Header />
+				<Content />
+				<Footer />
+			</div>
+		);
+	}
+};
+
+export default App;
