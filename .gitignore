@@ -6,7 +6,7 @@
 #             <nleme@live.fr>                                                #
 #                                                                            #
 #   Created:                                                 by elhmn        #
-#   Updated: Thu Jun 28 14:57:21 2018                        by bmbarga      #
+#   Updated: Sun Sep 16 10:15:26 2018                        by elhmn        #
 #                                                                            #
 # ************************************************************************** #
 
@@ -14,3 +14,46 @@
 .*.sw*
 .*.orig
 tags
+tags.*
+
+#react
+
+.DS_STORE
+scripts/flow/*/.flowconfig
+*~
+*.pyc
+.grunt
+_SpecRunner.html
+__benchmarks__
+remote-repo/
+.module-cache
+fixtures/dom/public/react-dom.js
+fixtures/dom/public/react.js
+test/the-files-to-test.generated.js
+*.log*
+chrome-user-data
+*.sublime-project
+*.sublime-workspace
+.idea
+*.iml
+.vscode
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
