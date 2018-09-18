@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 import	'antd/dist/antd.css';
-import	'../css/Content.css';
+import	'../../css/Content.css';
 import	React from 'react';
 import	{ Row, Col } from 'antd';
 import	{ Input } from 'antd';

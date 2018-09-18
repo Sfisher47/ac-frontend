@@ -6,7 +6,7 @@
 /*             <nleme@live.fr>                                                */
 /*                                                                            */
 /*   Created: Thu Jan 01 01:00:00 1970                        by elhmn        */
-/*   Updated: Mon Sep 17 22:45:15 2018                        by elhmn        */
+/*   Updated: Tue Sep 18 14:32:55 2018                        by bmbarga      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ import	React from 'react';
 import	{ Row, Col } from 'antd';
 import	{ Input } from 'antd';
 import	'antd/dist/antd.css';
-import CardMeta from './CardMeta.js'
+import CardMeta from '../common/CardMeta.js'
 
 class	FeaturedActionsSection extends React.Component
 {
