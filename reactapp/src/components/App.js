@@ -6,7 +6,7 @@
 /*             <nleme@live.fr>                                                */
 /*                                                                            */
 /*   Created: Sun Sep 16 20:04:48 2018                        by elhmn        */
-/*   Updated: Wed Sep 19 12:22:22 2018                        by bmbarga      */
+/*   Updated: Wed Sep 19 15:51:27 2018                        by bmbarga      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ class	App	extends React.Component
     constructor(props)
     {
         super(props);
-        this.state = { contentPage: PAGES.home };
+//         this.state = { contentPage: PAGES.home };
+        this.state = { contentPage: PAGES.login }; // Debug
     }
 
     changeContentPage(data)
@@ -38,7 +39,7 @@ class	App	extends React.Component
                     changeContentPage = {(data) => this.changeContentPage(data)}
                     contentPage = {this.state.contentPage}
                 />
-				<Content contentPage = {this.state.contentPage}/>
+ 				<Content contentPage = {this.state.contentPage}/>
 				<Footer />
 			</div>
 		);

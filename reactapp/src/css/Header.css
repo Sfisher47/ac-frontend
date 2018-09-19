@@ -7,3 +7,16 @@
 {
     height:100%;
 }
+
+#header li
+{
+    display: inline-block;
+    margin: 0px 10px;
+    cursor:pointer;
+}
+
+#header-menu
+{
+    height:60px;
+}
+

@@ -1,0 +1,52 @@
+#featured-actions-section
+{
+	min-height: 500px;
+}
+
+#search-section
+{
+	min-height: 80vh;
+	background-image: url("../imgs/action.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#explain-participation-section
+{
+	min-height: 300px;
+}
+
+#explain-create-section
+{
+	min-height: 500px;
+}
+
+#create-section
+{
+	min-height: 500px;
+}
+
+#create-container
+{
+	background-color: #EEEEEE;
+}
+
+#expl-create-container
+{
+
+}
+
+#expl-part-container
+{
+
+}
+
+#featured-section-container
+{
+	background-color: #EEEEEE;
+}
+
+.card-meta
+{
+	margin: 10px 10px 10px 10px;
+}

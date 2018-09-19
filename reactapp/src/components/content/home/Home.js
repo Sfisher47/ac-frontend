@@ -6,12 +6,12 @@
 /*             <nleme@live.fr>                                                */
 /*                                                                            */
 /*   Created:                                                 by elhmn        */
-/*   Updated: Wed Sep 19 11:47:21 2018                        by bmbarga      */
+/*   Updated: Wed Sep 19 15:20:22 2018                        by bmbarga      */
 /*                                                                            */
 /* ************************************************************************** */
 
 import	'antd/dist/antd.css';
-import	'../../../css/Content.css';
+import	'../../../css/Home.css';
 import	React from 'react';
 import	{ Row, Col } from 'antd';
 import	{ Input } from 'antd';
