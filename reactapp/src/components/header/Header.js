@@ -6,7 +6,7 @@
 /*             <nleme@live.fr>                                                */
 /*                                                                            */
 /*   Created: Thu Jan 01 01:00:00 1970                        by elhmn        */
-/*   Updated: Mon Sep 17 22:58:05 2018                        by elhmn        */
+/*   Updated: Wed Sep 19 11:29:23 2018                        by bmbarga      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,31 @@ import React from 'react';
 import	{ Row, Col } from 'antd';
 import	{ Menu } from 'antd';
 import '../../css/Header.css';
+import { PAGES } from '../common/Constants';
 
 class	Header extends React.Component
 {
+
 	render ()
 	{
 		return (
-			<Row id="header" type="flex" justify="space-between" align="middle">
-				<Col>
-					Actions Citoyennes
+			<Row id="header" type="flex" justify="space-between" align="bottom">
+				<Col className="h-100" id="header-logo">
+                        <Row id="header" type="flex" justify="space-between" align="middle">
+                            Actions Citoyennes
+                        </Row>
 				</Col>
 				<Col>
-					<ul
-						mode="horizontal">
-						<li>Home</li>
-						<li>Create</li>
-						<li>Log In</li>
-						<li>Sign In</li>
-					</ul>
+					<Menu
+                        style={{height:60}}
+                        size="large"
+						mode="horizontal"
+                        onClick={this.props.changeContentPage}>
+						<Menu.Item key={PAGES.home}>Home</Menu.Item>
+						<Menu.Item key={PAGES.create}>Create</Menu.Item>
+						<Menu.Item key={PAGES.login}>Log In</Menu.Item>
+						<Menu.Item key={PAGES.signin}>Sign In</Menu.Item>
+					</Menu>
 				</Col>
 			</Row>
 		);

@@ -6,7 +6,7 @@
 /*             <nleme@live.fr>                                                */
 /*                                                                            */
 /*   Created: Thu Jan 01 01:00:00 1970                        by elhmn        */
-/*   Updated: Mon Sep 17 23:00:45 2018                        by elhmn        */
+/*   Updated: Wed Sep 19 12:19:18 2018                        by bmbarga      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,45 +16,35 @@ import	React from 'react';
 import	{ Row, Col } from 'antd';
 import	{ Input } from 'antd';
 import	{ Button } from 'antd';
-import	FeaturedActionsSection from './FeaturedActionsSection.js'
-import  ExplainParticipationSection from './ExplainParticipationSection.js'
-import  ExplainCreateSection from './ExplainCreateSection.js'
-import	CreateSection from './ExplainCreateSection.js'
-
-import	SearchSection from './SearchSection.js'
+import  Home from './home/Home';
+import  Create from './create/Create';
+import  LogIn from './login/LogIn';
+import  SignIn from './signin/SignIn';
+import { PAGES } from '../common/Constants';
 
 class	Content extends React.Component
 {
+    getPages()
+    {
+        let   pages = {};
+        pages[PAGES.home] = <Home />;
+        pages[PAGES.create] = <Create />;
+        pages[PAGES.login] = <LogIn />;
+        pages[PAGES.signin] = <SignIn />;
+        return (pages);
+    }
+
+    renderContentPage()
+    {
+        return (this.getPages()[this.props.contentPage]);
+    }
+
 	render ()
 	{
 		return (
-			<div>
-				<Row type="flex" justify="space-around" align="middle">
-					<Col span={24}>
-						<SearchSection/>
-					</Col>
-				</Row>
-				<Row id="expl-part-container" type="flex" justify="space-around" align="middle">
-					<Col span={16}>
-						<ExplainParticipationSection />
-					</Col>
-				</Row>
-				<Row id="featured-section-container" type="flex" justify="space-around" align="middle">
-					<Col span={16}>
-						<FeaturedActionsSection />
-					</Col>
-				</Row>
-				<Row id="expl-create-container" type="flex" justify="space-around" align="middle">
-					<Col span={16}>
-						<ExplainCreateSection />
-					</Col>
-				</Row>
-				<Row id="create-container" type="flex" justify="space-around" align="middle">
-					<Col span={16}>
-						<CreateSection />
-					</Col>
-				</Row>
-			</div>
+            <div>
+                {this.renderContentPage()}
+            </div>
 		);
 	}
 };

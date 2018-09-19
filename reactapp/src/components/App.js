@@ -6,7 +6,7 @@
 /*             <nleme@live.fr>                                                */
 /*                                                                            */
 /*   Created: Sun Sep 16 20:04:48 2018                        by elhmn        */
-/*   Updated: Tue Sep 18 14:29:57 2018                        by bmbarga      */
+/*   Updated: Wed Sep 19 12:22:22 2018                        by bmbarga      */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,30 @@ import React from 'react';
 import	Header from './header/Header';
 import	Content from './content/Content';
 import	Footer from './footer/Footer';
+import { PAGES } from './common/Constants';
 
 class	App	extends React.Component
 {
+    constructor(props)
+    {
+        super(props);
+        this.state = { contentPage: PAGES.home };
+    }
+
+    changeContentPage(data)
+    {
+        this.setState({ contentPage: data.key});
+    }
+
 	render ()
 	{
 		return (
 			<div>
-				<Header />
-				<Content />
+				<Header
+                    changeContentPage = {(data) => this.changeContentPage(data)}
+                    contentPage = {this.state.contentPage}
+                />
+				<Content contentPage = {this.state.contentPage}/>
 				<Footer />
 			</div>
 		);
